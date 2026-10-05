@@ -129,8 +129,8 @@ section{padding:clamp(56px,8vw,96px) 0;}
 /* pipeline illustration (no data, purely illustrative) */
 .pipe{max-width:400px; margin-left:auto; width:100%;}
 .pipe__label{font-size:13px; color:#9AA2D6; margin:0 0 14px;}
-.pipe__bar{height:44px; width:var(--w); border-radius:6px; background:rgba(255,255,255,.07); border:1px solid rgba(255,255,255,.17); display:flex; align-items:center; padding:0 16px; font-size:14px; color:#fff;}
-.pipe__bar.is-end{background:var(--amber); border-color:var(--amber); color:#1B1508; font-weight:600;}
+.pipe__bar{height:44px; width:var(--w); min-width:fit-content; border-radius:6px; background:rgba(255,255,255,.07); border:1px solid rgba(255,255,255,.17); display:flex; align-items:center; padding:0 18px; font-size:14px; color:#fff; white-space:nowrap;}
+.pipe__bar.is-end{background:var(--amber); border-color:var(--amber); color:#1B1508; font-weight:600; margin-top:6px;}
 .pipe__leak{display:flex; align-items:center; gap:9px; padding:8px 0 8px 18px; margin:0; max-width:100%;}
 .pipe__leak::before{content:""; width:0; height:16px; border-left:2px dashed rgba(227,154,87,.85); flex-shrink:0;}
 .pipe__leak span{font-size:12.5px; color:#E39A57; line-height:1.3; min-width:0; flex:1 1 auto; overflow-wrap:break-word;}
